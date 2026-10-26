@@ -14,8 +14,8 @@ cask "agent-handler" do
   uninstall quit: "dev.gbettineschi.agent-handler"
 
   caveats <<~EOS
-    This personal build is ad-hoc signed and not notarized. If macOS blocks it,
-    approve it in System Settings > Privacy & Security after trying to open it.
-    Quit Agent Handler before upgrading.
+    Personal build, provided as is. Ad-hoc signed and not notarized.
+    If macOS blocks it, approve it in System Settings > Privacy & Security.
+    Quit Agent Handler before upgrading. Keep preferences and pairing data.
   EOS
 end
