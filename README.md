@@ -14,7 +14,7 @@ brew install --cask gbettineschi/tap/agent-handler
 | `crisp-personal` | [Crisp personal fork](https://github.com/gbettineschi/Crisp) |
 | `keepresso-mobile` | [Keepresso Mobile](https://github.com/gbettineschi/keepresso-mobile), development preview |
 
-Crisp and Keepresso become available here after their first Mac release finishes. Application source and downloads stay in the linked repositories. This repository contains installation recipes only. Private ClipRelay is not distributed here.
+Application source and downloads stay in the linked repositories. This repository contains installation recipes only. Private ClipRelay is not distributed here.
 
 ## Updates
 
