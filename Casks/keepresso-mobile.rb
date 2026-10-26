@@ -1,6 +1,6 @@
 cask "keepresso-mobile" do
-  version "0.4.3"
-  sha256 "59cc0fd804ab8228b0e38c4c9eca7b9e57d409c8030dac3fe6415b72412768e5"
+  version "0.4.7"
+  sha256 "72274f68eaf7d604028ccf50496afcf10a1483aee835bab23817f1001030afc8"
 
   url "https://github.com/gbettineschi/keepresso-mobile/releases/download/v#{version}/KeepressoMobile.zip"
   name "Keepresso Mobile"
