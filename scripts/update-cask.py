@@ -9,7 +9,7 @@ import subprocess
 import tempfile
 
 PACKAGES = {
-    "agent-handler": ("agent-handler", "Agent Handler", "AgentHandler.zip", "Agent Handler.app", "dev.gbettineschi.agent-handler", "Agent questions and approvals from the menu bar or notch"),
+    "agent-handler": ("simple-agent-monitor", "Agent Handler", "AgentHandler.zip", "Agent Handler.app", "dev.gbettineschi.agent-handler", "Agent questions and approvals from the menu bar or notch"),
     "tetherbug-personal": ("Tetherbug", "Tetherbug Personal", "Tetherbug-v{version}.zip", "Tetherbug.app", "ie.xav.tetherbug", "Personal Android hotspot companion"),
     "crisp-personal": ("Crisp", "Crisp Personal", "Crisp-personal.zip", "Crisp.app", "com.crisp.app", "Personal display scaling and brightness tools"),
     "keepresso-mobile": ("keepresso-mobile", "Keepresso Mobile", "KeepressoMobile.zip", "KeepressoMobile.app", "local.keespresso.companion", "Unofficial Keepresso phone companion for Mac"),
