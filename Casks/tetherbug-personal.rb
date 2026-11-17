@@ -1,6 +1,6 @@
 cask "tetherbug-personal" do
-  version "0.1.10"
-  sha256 "560dc5281ab5db3afadd51b04658f24c0c57d1ed02d2a46126fd1ec6e651bfb0"
+  version "0.1.11"
+  sha256 "01fa431722aa2d6915a01b20cd4885c45d964b22d1c285e4825a71a87615ce05"
 
   url "https://github.com/gbettineschi/Tetherbug/releases/download/v#{version}/Tetherbug-v#{version}.zip"
   name "Tetherbug Personal"
