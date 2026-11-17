@@ -10,7 +10,7 @@ brew install --cask gbettineschi/tap/agent-handler
 | Package | Project |
 | --- | --- |
 | `agent-handler` | [Simple Agent Monitor](https://github.com/gbettineschi/simple-agent-monitor) |
-| `tetherbug-personal` | [Tetherbug personal fork](https://github.com/gbettineschi/Tetherbug) |
+| `tetherbug-personal` | [Tetherbug (gbettineschi's version)](https://github.com/gbettineschi/Tetherbug) |
 | `crisp-personal` | [Crisp personal fork](https://github.com/gbettineschi/Crisp) |
 | `keepresso-mobile` | [Keepresso Mobile](https://github.com/gbettineschi/keepresso-mobile), development preview |
 
