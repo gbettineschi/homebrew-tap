@@ -16,7 +16,7 @@ cask "tetherbug-personal" do
   uninstall quit: "ie.xav.tetherbug", launchctl: "ie.xav.tetherbug.agent"
 
   caveats <<~EOS
-    Personal build, provided as is. Ad-hoc signed and not notarized.
+    Personal build, provided as is. Signed with a retained project certificate; not notarized.
     If macOS blocks it, approve it in System Settings > Privacy & Security.
     Quit Tetherbug before upgrading. Keep preferences and pairing data.
   EOS
