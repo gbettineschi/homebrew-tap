@@ -10,7 +10,7 @@ import tempfile
 
 PACKAGES = {
     "agent-handler": ("simple-agent-monitor", "Agent Handler", "AgentHandler.zip", "Agent Handler.app", "dev.gbettineschi.agent-handler", "Agent questions and approvals from the menu bar or notch"),
-    "tetherbug-personal": ("Tetherbug", "Tetherbug Personal", "Tetherbug-v{version}.zip", "Tetherbug.app", "ie.xav.tetherbug", "Personal Android hotspot companion"),
+    "tetherbug-personal": ("Tetherbug", "Tetherbug (gbettineschi's version)", "Tetherbug-v{version}.zip", "Tetherbug.app", "ie.xav.tetherbug", "Personal Android hotspot companion"),
     "crisp-personal": ("Crisp", "Crisp Personal", "Crisp-personal.zip", "Crisp.app", "com.crisp.app", "Personal display scaling and brightness tools"),
     "keepresso-mobile": ("keepresso-mobile", "Keepresso Mobile", "KeepressoMobile.zip", "KeepressoMobile.app", "local.keespresso.companion", "Unofficial Keepresso phone companion for Mac"),
 }
@@ -49,7 +49,10 @@ def render(package, tag, digest):
         lines.extend(["", f'  uninstall quit: "{bundle}", launchctl: "ie.xav.tetherbug.agent"'])
     else:
         lines.extend(["", f'  uninstall quit: "{bundle}"'])
-    lines.extend(["", "  caveats <<~EOS", "    Personal build, provided as is. Ad-hoc signed and not notarized.",
+    signing = "Ad-hoc signed and not notarized."
+    if package == "tetherbug-personal" and tuple(map(int, ver.split("."))) >= (0, 1, 12):
+        signing = "Signed with a retained project certificate; not notarized."
+    lines.extend(["", "  caveats <<~EOS", f"    Personal build, provided as is. {signing}",
                   "    If macOS blocks it, approve it in System Settings > Privacy & Security.",
                   f"    Quit {name} before upgrading. Keep preferences and pairing data.",
                   "  EOS", "end", ""])

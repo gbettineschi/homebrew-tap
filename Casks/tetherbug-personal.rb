@@ -3,7 +3,7 @@ cask "tetherbug-personal" do
   sha256 "6cdc17cdcbf2771484b29588219bd99bad065568d58f9b6755bac5f58f534e7a"
 
   url "https://github.com/gbettineschi/Tetherbug/releases/download/v#{version}/Tetherbug-v#{version}.zip"
-  name "Tetherbug Personal"
+  name "Tetherbug (gbettineschi's version)"
   desc "Personal Android hotspot companion"
   homepage "https://github.com/gbettineschi/Tetherbug"
 
@@ -16,8 +16,8 @@ cask "tetherbug-personal" do
   uninstall quit: "ie.xav.tetherbug", launchctl: "ie.xav.tetherbug.agent"
 
   caveats <<~EOS
-    Personal build, provided as is. Ad-hoc signed and not notarized.
+    Personal build, provided as is. Signed with a retained project certificate; not notarized.
     If macOS blocks it, approve it in System Settings > Privacy & Security.
-    Quit Tetherbug Personal before upgrading. Keep preferences and pairing data.
+    Quit Tetherbug (gbettineschi's version) before upgrading. Keep preferences and pairing data.
   EOS
 end
